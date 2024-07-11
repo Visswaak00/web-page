@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSR Input Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Generate CSR Input Form</h2>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State/Province:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class="form-group">
+                <label for="locality">Locality/City:</label>
+                <input type="text" id="locality" name="locality" required>
+            </div>
+            <div class="form-group">
+                <label for="organization">Organization Name:</label>
+                <input type="text" id="organization" name="organization" required>
+            </div>
+            <div class="form-group">
+                <label for="unit">Organization Unit:</label>
+                <input type="text" id="unit" name="unit">
+            </div>
+            <div class="form-group">
+                <label for="common_name">Common Name :</label>
+                <input type="text" id="common_name" name="common_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">passcode:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <p>CSR:</p>
+    <br>
+    <p id="result"></p>
+
+
+            <div class="form-group">
+                <button type="submit" class="js-send-action">Generate CSR</button>
+            </div>
+        </form>
+    </div>
+</body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"], input[type="email"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+</style>
+</html>
+
+
+<script>
+  document.getElementById('myForm').onsubmit = function() {
+    const country = document.getElementById('country').value;
+    const state = document.getElementById('state').value;
+    const locality = document.getElementById('locality').value;
+    const organization = document.getElementById('organization').value;
+    const unit = document.getElementById('unit').value;
+    const common_name = document.getElementById('common_name').value;
+    const email = document.getElementById('email').value;
+
+   
+  };
+</script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/connect.js"></script>
+<script type="text/javascript" src="js/main1.js"></script>
+
+</body>
+</html>
